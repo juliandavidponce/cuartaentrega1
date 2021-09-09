@@ -1,0 +1,417 @@
+/* ----NAV BAR --- */
+
+.menuhamburguesa{
+    display: none;
+}
+body{
+    margin: 0;
+}
+nav{
+    background-color: #114b09;
+    width: 100%;
+   
+    top: 0%;
+    .navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+img{
+    width: 150px;
+}
+
+ul{
+    list-style: none;
+    height: 50px;
+    margin: 0;
+    .itemList{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+
+    }
+
+    .itemList a{
+        display:block;
+        text-decoration: none;
+        color: white;
+        font-family: "Comic Sans MS";
+        text-transform: uppercase;
+        
+
+
+
+    }
+    .itemList:hover{
+        background-color:white;
+        
+        a{
+            color: black;
+    }
+    }
+
+    }
+}
+
+
+
+// -- Footer --//
+
+footer{
+    background-color: #114b09 ;
+    position: relative;
+    
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+
+
+        li{
+            color: white;
+            padding: 5px;
+        }
+
+
+        .itemFooterImg {
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+    }
+}
+ // -- General --//
+
+ body{
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/leaves-pattern.png);
+    background-size: 500px;
+ }
+
+
+// -- HOME -- //
+.divArticulo{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+
+}
+.articulo1{
+    font-family: 'Azeret Mono', monospace;
+    display: block ;
+    background-color: #114b09;
+    width: 600px;
+    height: 400px;
+    padding: 15px;
+    margin: 10px;
+    color: white;
+    
+
+    img{
+        width: 550px;
+        height: auto;
+    }
+}
+
+.articulo2{
+    font-family: 'Azeret Mono', monospace;
+    display: block ;
+    background-color: #114b09;
+    width: 600px;
+    height: 400px;
+    padding: 15px;
+    margin: 10px;
+    color: white;
+    
+
+    img{
+        width: 550px;
+        height: auto;
+    }
+}
+
+.articulo3{
+    font-family: 'Azeret Mono', monospace;
+    display: block ;
+    background-color: #114b09;
+    width: 600px;
+    height: 400px;
+    padding: 15px;
+    margin: 10px;
+    color: white;
+    
+
+    img{
+        width: 550px;
+        height: auto;
+    }
+}
+
+
+
+// -- Que Reciclar -- //
+
+
+#botelladeamor{
+    height: 100vh;
+    .botellaDeamor{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .listaBotella{
+            font-size: 1.25em;
+        }
+    }
+}
+.listaBotella li{
+    padding-bottom: 20px;
+}
+.tituloBotella{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+// -- Donde Encontrarnos -- //
+
+#dondeencontrarnos{
+    .divLugar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-width: 100vw;
+    }
+    .lugar{
+        color: white;
+        text-align: center;
+        margin: 10px;
+    background-color: #114b09;
+
+}
+}
+
+
+// -- Contaminacion -- //
+
+
+#contaminacion{
+    h2{
+        font-size: 3em;
+        text-align: center;
+        font-family: 'Azeret Mono', monospace;
+    }
+    .ArticuloContaminacion{
+        display: flex;
+        flex-direction: column;
+        p{
+            font-size: 1.25em;
+        }
+        .parrafoContaminacion{
+            max-width: 1400px;
+            margin: auto;
+            font-family: 'Azeret Mono', monospace;
+        }
+    }
+}
+
+
+// -- Contacto -- //
+
+.FormularioCompleto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button{
+    border-radius: 20%;
+}
+
+@media (min-width: 481px) {
+    #menuhamburguesa{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+// -- Nav-Bar y menu Hamburguesa -- //
+.menuhamburguesa{
+    display: block;
+}
+
+    nav {
+        .navegacion{
+     display: none;
+    }
+}
+
+footer{
+    background-color: #114b09 ;
+    position: relative;
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       list-style: none;
+    }
+}
+
+
+
+// -- Articulos -- //
+
+.divArticulo{
+    display: flex;
+    flex-direction: column;
+    
+    .articulo1{
+        width: 300px;
+        margin: auto;
+        img{
+            max-width: 250px;
+        }
+        p{
+            max-width: 250px;
+        }
+    }
+    .articulo2{
+        width: 300px;
+        margin: auto;
+        margin-top: 10px;
+        img{
+            max-width: 250px;
+        }
+        p{
+            max-width: 250px;
+        }
+    }
+    .articulo3{
+        width: 300px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        img{
+            max-width: 250px;
+        }
+        p{
+            max-width: 250px;
+        }
+    }
+}
+
+
+
+
+
+// -- Botella de Amor -- //
+
+#botelladeamor{
+    
+    height: 100vh;
+    width: 100vw;
+    h2{
+        
+        text-align: center;
+        font-size: 1.25rem;
+    }
+    .botellaDeamor{
+        height: 100%;
+
+        ul{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    
+        li{
+            width: 100px;
+            list-style: none;
+            text-align: center;
+            padding:10px;
+            font-size: 0.65em;
+        }
+    }
+    .divBotella1{
+        height: 100%;
+        width: 200px;
+    }
+    .divBotella2{
+        img{
+            max-width: 150px;
+           height: 100%;
+            
+        }
+    }
+    .divBotella3{
+        width: 200px;
+    }
+
+
+}
+
+// -- Donde Encontrarnos -- //
+.divLugar{
+    flex-direction: column;
+    .lugar{
+        width: 100vw;
+        iframe{
+            width: 80%;
+            height: 400px;
+        }
+    }
+}
+}
+
+
+// -- Contaminacion -- //
+
+#contaminacion{
+    .parrafoContaminacion{
+        max-width: 100vw;
+        p{
+            font-size: 0.25em;
+         }
+    }
+}
+
+
+// -- Contacto -- // 
+
+.FormularioCompleto{
+    
+    height: 100vh;
+    max-width: 80vw;
+    margin: auto;
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+label{
+    padding: 15px;
+    margin: auto;
+}
+    textarea{
+        width:200px;
+    }
+
+
+}
