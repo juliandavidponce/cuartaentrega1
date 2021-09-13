@@ -96,7 +96,8 @@ footer{
 // -- HOME -- //
 .divArticulo{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-top: 100px;
 
 }
@@ -264,6 +265,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items:center;
        list-style: none;
     }
 }
